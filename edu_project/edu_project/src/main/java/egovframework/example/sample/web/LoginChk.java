@@ -15,7 +15,8 @@ import egovframework.example.sample.service.MemberVO;
 
 @RestController
 public class LoginChk {
-	BCryptPasswordEncoder encoder = new BCryptPasswordEncoder();
+	@Inject
+	BCryptPasswordEncoder encoder;
 	@Inject
 	MemberService memberservice;
 	//회원가입 메소드

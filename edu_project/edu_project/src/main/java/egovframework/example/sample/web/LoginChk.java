@@ -23,7 +23,7 @@ public class LoginChk {
 	@PostMapping("/user")
 	public String join(@RequestBody MemberVO mvo) {//ajax에서 전송한 data MemberVO에 매핑
 		//비밀번호 암호화
-				String pw = mvo.getM_pw();
+		String pw = mvo.getM_pw();
 				System.out.println("원래 비번 :"+pw);
 					pw = encoder.encode(pw);
 					mvo.setM_pw(pw);

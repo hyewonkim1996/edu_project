@@ -14,14 +14,7 @@ public class PageVO {
 	private int endPage; //끝 페이지
 	private int startPage; //시작 페이지
 	private boolean prev; //이전 페이지 그룹 여부
-	private boolean next; //다음 페이지 그룹 여부
-	
-	public void prt() {
-		System.out.println("StartNo : "+startNo);
-		System.out.println("endNo : "+endNo);
-		System.out.println("startPage : "+startPage);
-		System.out.println("endPage : "+endPage);
-	}	
+	private boolean next; //다음 페이지 그룹 여부	
 	
 	public void setTotalCount(int totalCount) {
 		this.totalCount = totalCount;

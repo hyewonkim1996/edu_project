@@ -6,9 +6,6 @@ import lombok.Setter;
 @Getter
 @Setter
 public class CourseVO {
-	//extends CourseDefaultVO
-	//private static final long serialVersionUID = 1L;
-
 	private String c_num = null; //강좌고유번호
 	private String c_name = null; //강좌명
 	private String c_place = null; //기관명(강의장소)
@@ -18,6 +15,4 @@ public class CourseVO {
 	private String c_now = null; //신청인원
 	private String c_teacher = null; //강사명
 	private String c_student = null; //수강대상
-	
-	
 }

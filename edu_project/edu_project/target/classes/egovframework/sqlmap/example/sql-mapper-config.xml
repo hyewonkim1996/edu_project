@@ -3,8 +3,6 @@
 
 <configuration>
     <typeAliases>
-		<typeAlias alias="searchVO" type="egovframework.example.sample.service.SampleDefaultVO"/>
-		<typeAlias alias="sampleVO" type="egovframework.example.sample.service.SampleVO"/>
     	<typeAlias alias="courseVO" type="egovframework.example.sample.service.CourseVO"/>
     	<typeAlias alias="MemberVO" type="egovframework.example.sample.service.MemberVO"/>
     	<typeAlias alias="ReviewVO" type="egovframework.example.sample.service.ReviewVO"/>

@@ -1,4 +1,4 @@
-![image](https://github.com/hyewonkim1996/edu_project/blob/main)
+![image](https://github.com/hyewonkim1996/edu_project/assets/153244876/8eafaf96-1883-4d6b-ae61-8ae712cc5866)
 
 &nbsp;
 &nbsp;

@@ -38,6 +38,8 @@
 ## 🚧 개발 환경 
 ![image](https://github.com/hyewonkim1996/edu_project/assets/153244876/238b0c23-46e8-4e16-a132-944ce04b90d0)
 
+&nbsp;
+
 ## ❓ 주요 사용 기술과 이유
 
 |사용 기술|프로젝트 적용 범위|🌟이유🌟|
@@ -50,6 +52,7 @@
 |open API|카카오 로그인|SNS 간편 로그인으로 사용자의 편의성 향상->더 많은 회원 유치 가능|
 |lombok 라이브러리|각 VO @Getter, @Setter, @toString|코드 다이어트로 속도 개선|
 
+&nbsp;
 
 ## 💡 배운 점
 

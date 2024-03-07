@@ -65,8 +65,6 @@
 |REST API|post로 회원가입 구현 시 @RequestBody로 매핑이 안되는 오류 발생|프론트에서 넘겨주는 값 개발자 모드 payload에서 확인-> 문제없음 / VO 필드와 DB 컬럼 일치 -> 문제없음으로 전자정부 프레임워크 REST API 설정에 대해 구글링|전자정부 프레임워크에서 @RequestBody 사용 시 어노테이션 별도 설정 필요|dispatcher.servlet.xml에 messageConverter bean 설정|
 |REST API|파라미터 붙이는 get 구현 시 404 오류 발생|프론트에서 요청하는 값과 컨트롤러 value가 같음 -> 문제없음으로 전자정부 프레임워크 REST API 설정에 대해 구글링|전자정부 프레임워크 url에 디폴트로 .do를 붙이는 설정으로 인해 계층적 url 적용 안됨|web.xml에서 url 매핑 설정 수정|
 |CRUD|수강후기 작성, 수정 시 줄바꿈한 내용이 조회 시 반영되지 않음|DB에 줄바꿈 내용이 잘못 저장되는 것으로 추정하여 작성, 조회 시 프론트단과 컨트롤러에서 디버깅|HTML의 줄바꿈은 <br>태그, DB에 저장될 때는 개행문자 \r\n으로 저장되기 때문|컨트롤러에서 getter,setter,replace 사용하여 개행문자 태그로 변경|
-|DB - View|수강 후기 작성 시 수강 강좌 카테고리에 회원 수강 강좌 반영|기존 후기+강좌 테이블 조인한 4줄 쿼리->1줄로 줄여 가독성, 편의성 향상|
-|lombok 라이브러리|각 VO @Getter, @Setter, @toString|Getter, Setter 어노테이션으로 대체해 코드 다이어트|
 
 &nbsp;
 

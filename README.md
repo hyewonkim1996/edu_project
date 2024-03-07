@@ -58,8 +58,8 @@
 
 ## 🔑 트러블 슈팅
 
-|사용 기술|발생한 문제|해결 과정|밝혀진 원인|해결 방법
-|------|---|---|
+|사용 기술|발생한 문제|해결 과정|밝혀진 원인|해결 방법|
+|------|---|---||------||------|
 |개발환경 세팅 - 전자정부 프레임워크 DB 연동|DB 커넥션 실패|dataSource bean 설정 부분에 문제가 있을 것으로 추정하여 pom.xml과 context-dataSource.xml을 꼼꼼히 살펴봄|커넥션 라이브러리 아이디(dbcp)와 dataSource 기존 class 설정(dbcp2)의 불일치|class 설정을 아이디와 같게 수정|
 |Spring Security|bad credentials 오류 - 알맞은 비밀번호를 입력해도 로그인 실패|비밀번호 암호화 과정에서 문제가 생긴 것으로 추정|전자정부프레임워크에 적용하기 전 스프링에서 연습한 튜플을 그대로 db에서 삽입|Java에서 비밀번호 암호화를 거친 새로운 튜플 삽입|
 |REST API|post로 회원가입 구현 시 @RequestBody로 매핑이 안되는 오류 발생|프론트에서 넘겨주는 값 개발자 모드 payload에서 확인-> 문제없음 / VO 필드와 DB 컬럼 일치 -> 문제없음으로 전자정부 프레임워크 REST API 설정에 대해 구글링|전자정부 프레임워크에서 @RequestBody 사용 시 어노테이션 별도 설정 필요|dispatcher.servlet.xml에 messageConverter bean 설정|

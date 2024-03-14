@@ -38,7 +38,7 @@
 &nbsp;
 
 ## 🚧 개발 환경 
-![image](https://github.com/hyewonkim1996/edu_project/assets/153244876/238b0c23-46e8-4e16-a132-944ce04b90d0)
+![image](https://github.com/hyewonkim1996/edu_project/blob/main/%EA%B3%B5%EA%B3%B5%20%EA%B5%90%EC%9C%A1%20%EC%84%9C%EB%B9%84%EC%8A%A4%20%EC%83%88%EC%8B%B9%EC%B2%AD%EC%86%8C%EB%85%84%EA%B5%90%EC%9C%A1%EB%B3%B5%EC%A7%80%EC%84%BC%ED%84%B0%20-%20%EA%B0%9C%EB%B0%9C%ED%99%98%EA%B2%BD.png?raw=true)
 
 &nbsp;
 

@@ -1,4 +1,4 @@
-![image](https://github.com/hyewonkim1996/edu_project/assets/153244876/8eafaf96-1883-4d6b-ae61-8ae712cc5866)
+![image](https://github.com/hyewonkim1996/edu_project/assets/153244876/1c18d377-43c0-4a8e-a59a-90336753b1f8)
 
 &nbsp;
 &nbsp;
@@ -30,9 +30,12 @@
 
 > 개인 목표 : 전자정부 표준프레임워크 숙련도 강화로 공공 프로젝트 실무에 대한 간접 경험 및 새로운 프레임워크에 대한 적응력 키우기 / 실습으로 웹 구조 흐름 이해도 높이기 
 
+> 🔗 [프로젝트 시연 영상]
+(https://www.youtube.com/watch?v=v1fOSp8c0Dk)
+
 > 🔗 [프로젝트 일지](https://hyewonkim1996.tistory.com/category/%F0%9F%93%81%20%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%20%EC%9D%BC%EC%A7%80/%F0%9F%91%A9%E2%80%8D%F0%9F%8F%AB%20eGov%20-%20%EA%B3%B5%EA%B3%B5%20%EA%B5%90%EC%9C%A1%20%EC%84%9C%EB%B9%84%EC%8A%A4?page=2)
 
-> 🔗 [프로젝트 PDF_Link](https://github.com/hyewonkim1996/edu_project/blob/main/%EA%B3%B5%EA%B3%B5%20%EA%B5%90%EC%9C%A1%20%EC%84%9C%EB%B9%84%EC%8A%A4%20-%20%EC%83%88%EC%8B%B9%EC%B2%AD%EC%86%8C%EB%85%84%EA%B5%90%EC%9C%A1%EB%B3%B5%EC%A7%80%EC%84%BC%ED%84%B0.pdf)
+> 🔗 [프로젝트 PDF](https://github.com/hyewonkim1996/edu_project/blob/main/%EA%B3%B5%EA%B3%B5%20%EA%B5%90%EC%9C%A1%20%EC%84%9C%EB%B9%84%EC%8A%A4%20-%20%EC%83%88%EC%8B%B9%EC%B2%AD%EC%86%8C%EB%85%84%EA%B5%90%EC%9C%A1%EB%B3%B5%EC%A7%80%EC%84%BC%ED%84%B0.pdf)
 
 &nbsp;
 &nbsp;

@@ -16,6 +16,75 @@ public class PageVO {
 	private boolean prev; //이전 페이지 그룹 여부
 	private boolean next; //다음 페이지 그룹 여부
 	
+	
+	public int getStartNo() {
+		return startNo;
+	}
+
+	public void setStartNo(int startNo) {
+		this.startNo = startNo;
+	}
+
+	public int getEndNo() {
+		return endNo;
+	}
+
+	public void setEndNo(int endNo) {
+		this.endNo = endNo;
+	}
+
+	public int getPerPageNum() {
+		return perPageNum;
+	}
+
+	public void setPerPageNum(int perPageNum) {
+		this.perPageNum = perPageNum;
+	}
+
+	public Integer getPage() {
+		return page;
+	}
+
+	public void setPage(Integer page) {
+		this.page = page;
+	}
+
+	public int getEndPage() {
+		return endPage;
+	}
+
+	public void setEndPage(int endPage) {
+		this.endPage = endPage;
+	}
+
+	public int getStartPage() {
+		return startPage;
+	}
+
+	public void setStartPage(int startPage) {
+		this.startPage = startPage;
+	}
+
+	public boolean isPrev() {
+		return prev;
+	}
+
+	public void setPrev(boolean prev) {
+		this.prev = prev;
+	}
+
+	public boolean isNext() {
+		return next;
+	}
+
+	public void setNext(boolean next) {
+		this.next = next;
+	}
+
+	public int getTotalCount() {
+		return totalCount;
+	}
+
 	public void prt() {
 		System.out.println("StartNo : "+startNo);
 		System.out.println("endNo : "+endNo);

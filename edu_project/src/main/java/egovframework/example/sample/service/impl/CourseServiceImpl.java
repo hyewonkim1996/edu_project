@@ -12,17 +12,9 @@ import egovframework.rte.fdl.cmmn.EgovAbstractServiceImpl;
 
 @Service("CourseService")
 public class CourseServiceImpl extends EgovAbstractServiceImpl implements CourseService {
-
-	//private static final Logger LOGGER = LoggerFactory.getLogger(EgovCourseServiceImpl.class);
-
 	/** CourseDAO */
 	@Resource(name="CourseMapper")
 	private CourseMapper courseDAO;
-
-//	/** ID Generation */
-//	@Resource(name = "egovIdGnrService")
-//	private EgovIdGnrService egovIdGnrService;
-
 
 	//특정 번호의 강좌글을 조회
 	@Override

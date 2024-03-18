@@ -323,6 +323,7 @@ function kakaoLogin() {
               		  console.log('로그인 진행');
               		  var password = "sns";
           			//아이디와 비밀번호를 post 방식으로 서버에 전송해야 하므로 동적 form 생성
+          			//코드 리팩토링 가능성 : 새로운 form 생성하지 않고 home에 있는 기존 로그인 form 이용
               		  // FormData 객체 생성
               		  var formData = new FormData();
           			//append 함수로 form에 작성할 데이터 붙이기(input 태그 name, input 태그 value)

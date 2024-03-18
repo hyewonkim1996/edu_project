@@ -21,14 +21,6 @@ public class CourseController {
 	@Resource(name = "CourseService")
 	private CourseService courseService;
 	
-	/** EgovPropertyService */
-	@Resource(name = "propertiesService")
-	protected EgovPropertyService propertiesService;
-
-	/** Validator */
-	@Resource(name = "beanValidator")
-	protected DefaultBeanValidator beanValidator;
-	
 	//강좌 목록 보기
 	@RequestMapping(value = "/courseList", method = RequestMethod.GET)
 	public String courselist(Locale locale, Model model, @ModelAttribute PageVO pvo,

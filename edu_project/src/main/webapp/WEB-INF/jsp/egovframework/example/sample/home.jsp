@@ -293,7 +293,7 @@ function signup(user){
     	 }
       });
 }
-Kakao.init('7d2e6414fd2f7670fa131b7f5e5b3e8c'); //발급받은 키 중 javascript키를 사용해준다.
+Kakao.init('0485df2a7c5a200f4f175c1ca7efef4d'); //발급받은 키 중 javascript키를 사용해준다.
 console.log(Kakao.isInitialized()); // sdk초기화여부판단
 //7d2e6414fd2f7670fa131b7f5e5b3e8c 윤지키
 //0485df2a7c5a200f4f175c1ca7efef4d 혜원키
@@ -313,7 +313,7 @@ function kakaoLogin() {
               console.log(user);
               //비동기 처리 시작
               $.ajax({
-          		url:'userlist/'+userId,//카카오 id url에 붙여서 전송
+          		url:'user/'+userId,//카카오 id url에 붙여서 전송
           		method:'GET',
           		contentType : "application/json; charset=UTF-8", //서버로 보내는 데이터 타입(json)
           		dataType : 'text', //서버로부터 받을 데이터 타입

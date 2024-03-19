@@ -15,7 +15,8 @@ import egovframework.example.sample.service.MemberVO;
 
 @RestController
 public class LoginChk {
-	BCryptPasswordEncoder encoder = new BCryptPasswordEncoder();
+	@Inject
+	BCryptPasswordEncoder encoder;
 	@Inject
 	MemberService memberservice;
 	//회원가입 메소드
@@ -27,10 +28,8 @@ public class LoginChk {
 					pw = encoder.encode(pw);
 					mvo.setM_pw(pw);
 				System.out.println("암호화된 비번 :"+pw);
-				mvo.prt();
 		if(mvo.getM_id()!=null) {//MemberVO 객체 id가 null이 아니다 = 매핑 성공
 			memberservice.insertOne(mvo); //회원 insert 쿼리 진행
-			System.out.println("쿼리실행됨");
 			return "success";
 		}else {
 			return "mvo is null";
@@ -38,11 +37,9 @@ public class LoginChk {
 	}
 	
 	//회원 조회 메소드
-	@GetMapping("/userlist/{userid}")//{userid} = ajax url에 붙인 값(ajax에서 쓴것과 이름 같아야 매핑됨)
+	@GetMapping("/user/{userid}")//{userid} = ajax url에 붙인 값(ajax에서 쓴것과 이름 같아야 매핑됨)
 	public String loginPreChk(@PathVariable String userid) {//url에 붙인 값(ajax에서 쓴것과 이름 같아야 매핑됨)
 		MemberVO returnmvo = memberservice.selectOneforModify(userid); //회원 조회 쿼리 실행
-		//System.out.println("해당 id 회원가입 여부");
-		//System.out.println(returnmvo!=null);
 		if(returnmvo!=null) {//MemberVO 객체 아이디가 null이 아님 = 디비에 존재하므로 이미 가입된 아이디
 			return "login"; //ajax에 전달될 result
 		}else {//MemberVO 객체 아이디가 null = 디비에 존재하지 않므로 가입되지 않은 아이디

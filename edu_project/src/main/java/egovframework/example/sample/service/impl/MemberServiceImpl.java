@@ -24,8 +24,8 @@ public class MemberServiceImpl extends EgovAbstractServiceImpl implements Member
 	}
 	
 	@Override
-	public void deleteOne(String id) {
-		memberDAO.deleteOne(id);
+	public boolean deleteOne(String id) {
+		return memberDAO.deleteOne(id);
 	}
 
 	@Override

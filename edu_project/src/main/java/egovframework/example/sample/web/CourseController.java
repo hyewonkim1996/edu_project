@@ -5,6 +5,7 @@ import java.util.Locale;
 import javax.annotation.Resource;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -22,7 +23,7 @@ public class CourseController {
 	private CourseService courseService;
 	
 	//강좌 목록 보기
-	@RequestMapping(value = "/courseList", method = RequestMethod.GET)
+	@GetMapping("/courses")
 	public String courselist(Locale locale, Model model, @ModelAttribute PageVO pvo,
 			@RequestParam(value="pvo", required=false) String a) throws Exception {
 		//Locale locale, Model model, @ModelAttribute PageVO pvo에서 
@@ -43,7 +44,7 @@ public class CourseController {
 	}
 	
 	//강좌 상세 보기
-	@RequestMapping(value = "/courseOne", method = RequestMethod.GET)
+	@GetMapping("/course-detail")
 	public String courseOne(Locale locale, Model model, @RequestParam("vno") String vno, 
 			@RequestParam(value="flag2", required=false) String a, PageVO pvo) throws Exception {
 		model.addAttribute("flag2", a);
@@ -53,7 +54,7 @@ public class CourseController {
 	}
 	
 	//강좌 상세보기 - 지도 보기
-	@RequestMapping(value = "/mapView", method = RequestMethod.GET)
+	@GetMapping("/map")
 	public String map(Locale locale, Model model) throws Exception {
 		
 		return "sample/map";

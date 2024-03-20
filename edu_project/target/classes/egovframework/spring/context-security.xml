@@ -23,8 +23,8 @@
 			password-parameter="m_pw" 
 			login-processing-url="/login"
 			login-page="/home"
-			default-target-url="/login_success"
-			authentication-failure-url="/login_fail"
+			default-target-url="/login-success"
+			authentication-failure-url="/login-fail"
 			 />
 			
 			<!-- 
@@ -65,7 +65,7 @@
 	    <remember-me key="remember-key" token-validity-seconds="604800" remember-me-parameter="remember-me-param"/>
 	    <logout 
 	    	logout-url="/logout" 
-	    	logout-success-url="/logout_After" 
+	    	logout-success-url="/logout-After" 
 	    	invalidate-session="true" 
             delete-cookies="JSESSIONID,SPRING_SECURITY_REMEMBER_ME_COOKIE"/>
     </http>

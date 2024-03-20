@@ -155,7 +155,7 @@
     			}
     			console.log(user);
     			$.ajax({
-    				url:'user',
+    				url:'member',
     				method:'PUT',
     				data : JSON.stringify(user), //js 데이터 객체 user를 json 문자열로 변환
     				contentType : "application/json; charset=UTF-8", //서버로 보내는 데이터 타입(json)

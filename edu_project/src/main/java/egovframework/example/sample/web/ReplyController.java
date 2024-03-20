@@ -50,7 +50,7 @@ public class ReplyController {
 	@Resource(name = "beanValidator")
 	protected DefaultBeanValidator beanValidator;
 	
-	@PostMapping("/replyDone")
+	@PostMapping("/reply")
 	public String replydone(@RequestBody ReplyVO revo) { 
 		System.out.println("체크:" + revo.getC_num());
 
@@ -58,14 +58,14 @@ public class ReplyController {
 		return "success"; //return 시 vno도 받을 수 있는지
 	}
 	
-	@PutMapping("/replyUpdate")
+	@PutMapping("/reply")
 	public String replyUpdate(@RequestBody ReplyVO revo) { 
 		System.out.println("수정할 댓글번호:" + revo.getRep_num());
 		replyservice.updateOne(revo);
 		return "success"; //return 시 vno도 받을 수 있는지
 	}
 	
-	@DeleteMapping("/replyDelete/{rep_num}")
+	@DeleteMapping("/reply/{rep_num}")
 	public String replyDelete(@PathVariable("rep_num") String rep_num) { 
 		System.out.println("삭제할 댓글번호:" + rep_num);
 		replyservice.deleteOne(rep_num);
@@ -73,7 +73,7 @@ public class ReplyController {
 	}
 	
 	
-	@GetMapping("/replySelect/{vno}")
+	@GetMapping("/reply/{vno}")
 	public List<ReplyVO> replySelect(@PathVariable String vno) throws Exception {
 	    try {
 	        List<ReplyVO> relist = replyservice.selectAll(vno);

@@ -88,7 +88,7 @@
   		</p>
 		</div>			 
 			<p>회원정보 관리는 해당하는 버튼을 눌러주세요.</p> 
-			<button type="button" onclick="location.href='memberModify?m_id=${userid}';">
+			<button type="button" onclick="location.href='member';">
 			회원정보 수정 </button> &nbsp &nbsp  
 			<button type="button" onclick="deleteMember('${userid}')">
 			회원 탈퇴 </button>  <br> <br>
@@ -106,7 +106,7 @@
 			<span style="margin-left:110px; font-size:20px; color: #f94327; font-weight:bold;">
 			${username}</span> 
 			<span>님께서 신청하신 강좌목록(총 ${courseCnt}건)입니다.</span> &nbsp 
-			<button type="button" onclick="location.href='mapView';"
+			<button type="button" onclick="location.href='map';"
 			class="btn btn-primary" style="color:blue; font-weight:bold;">
 			교육장소 위치 < 클릭  </button> 
 			<p style="margin-left:110px;">강좌명을 클릭하면 해당 강좌의 상세보기 페이지로 이동합니다.</p> 
@@ -130,7 +130,7 @@
 					<tr>
 						<td style="text-align:center;">${mcvo.c_num}</td>
 						<td style="text-align:left;">&nbsp 
-						<a href="courseOne?vno=${mcvo.c_num}">${mcvo.c_name}&nbsp(${mcvo.c_student})</a></td>
+						<a href="course-detail?vno=${mcvo.c_num}">${mcvo.c_name}&nbsp(${mcvo.c_student})</a></td>
 						<td style="text-align:center;">${mcvo.c_teacher}</td>
 						<td style="text-align:center;">${mcvo.c_place}</td>
 						<td style="text-align:center;">${mcvo.c_date}</td>
@@ -143,6 +143,7 @@
 		</table>
 	</div>
 	</c:if>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script>	
 		<!-- 강좌신청 취소 여부 다시 물어보기 -->
 		function delchk(dno){
@@ -156,8 +157,19 @@
 		function deleteMember(id) {
 			console.log("Function called with ID:", id);
 			if(confirm("정말로 탈퇴하시겠습니까?")){
-				alert("탈퇴가 완료되었습니다.");
-				location.href="memberDelete?m_id="+id;
+				$.ajax({
+					url:'member',
+					method:'DELETE',
+					contentType : "application/json; charset=UTF-8", //서버로 보내는 데이터 타입(json)
+					success: function(result){
+						console.log('통신 성공:'+result);
+						alert("탈퇴가 완료되었습니다.");
+						location.href='/edu_project/home';
+					},
+					error : function(){
+						alert("회원 탈퇴 실패");
+					}
+				});
 			}else{
 				alert("탈퇴를 취소합니다.")
 			}

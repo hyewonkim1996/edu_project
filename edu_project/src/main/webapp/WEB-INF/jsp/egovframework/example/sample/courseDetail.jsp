@@ -138,7 +138,7 @@
 					신청 </button> &nbsp 	
 				</c:if>		
 				<button type="button" 
-					onclick="location.href='courseList?page=${page.page}';"
+					onclick="location.href='courses?page=${page.page}';"
 					class="btn btn-primary">
 					 목록 </button> 	 
 			</div>
@@ -163,7 +163,7 @@
 					<tr>
 						<th>장소</th>
 						<td colspan="5">${nowvo.c_place} &nbsp
-						<button type="button" onclick="location.href='mapView';"
+						<button type="button" onclick="location.href='map';"
 						class="btn btn-primary"> 위치보기 </button></td>
 					</tr>
 					<tr>
@@ -256,7 +256,7 @@
 		                m_id: M_id,
 		                rep_content: Rep_content
 		            }),
-		            url: 'replyDone',
+		            url: 'reply',
 		            contentType: "application/json; charset=UTF-8",
 		            //dataType이 서버로부터 받는 데이터타입이라서 데이터를 리턴받는게 아니면 생략(post방식일 땐 생략하자)
 		            success: function(data) {
@@ -278,7 +278,7 @@
 	        var Vno = $("#vno").val(); // 보낼 값
 	        $.ajax({
 	            method: 'GET',
-	            url: 'replySelect/' + Vno,
+	            url: 'reply/' + Vno,
 	            contentType: 'application/json; charset=UTF-8', // 데이터 타입 설정
 	            dataType: 'json', // 응답 데이터 타입 설정
 	            success: function(data) { // 성공 시 실행할 코드
@@ -417,7 +417,7 @@
 		            rep_num: Rep_num,
 		            rep_date: Rep_date
 		        }),
-		        url: 'replyUpdate',
+		        url: 'reply',
 		        contentType: "application/json; charset=UTF-8",
 		        success: function (data) {
 		            alert("댓글이 수정되었습니다.");
@@ -443,7 +443,7 @@
 		
 		    $.ajax({
 		        method: 'DELETE',
-		        url: 'replyDelete/' + Rep_num,
+		        url: 'reply/' + Rep_num,
 		        contentType: "application/json; charset=UTF-8",
 		        success: function (data) {
 		            alert("댓글이 삭제되었습니다.");

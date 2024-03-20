@@ -121,7 +121,7 @@ tr:nth-child(even) {
 	<br><br>
 	<div class="col-12 d-flex justify-content-center">
 		<c:if test="${page.prev}">
-			<a href="reviewList?page=${page.startPage-1}">
+			<a href="reviews?page=${page.startPage-1}">
 			<button class="btn btn-primary" style="background-color:white; border:solid #f94327 1px; color:#f94327; margin-right:5px;">
 			이전</button>
 			</a>
@@ -133,14 +133,14 @@ tr:nth-child(even) {
 						${idx}</button>
 					</c:when>
 					<c:otherwise>
-						<a href="reviewList?page=${idx}">
+						<a href="reviews?page=${idx}">
 						<button class="btn btn-primary" style="background-color:#f94327; border:#f94327; margin-right:5px;">
 						${idx}</button></a>
 					</c:otherwise>
 				</c:choose>
 			</c:forEach>
 		<c:if test="${page.next}">
-			<a href="reviewList?page=${page.endPage+1}">
+			<a href="reviews?page=${page.endPage+1}">
 			<button class="btn btn-primary" style="background-color:white; border:solid #f94327 1px; color:#f94327;">
 			다음</button></a>
 		</c:if>

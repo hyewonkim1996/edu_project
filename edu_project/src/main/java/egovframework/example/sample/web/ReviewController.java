@@ -10,6 +10,7 @@ import javax.servlet.http.HttpSession;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -31,7 +32,7 @@ public class ReviewController {
 	@Inject
 	private FileDataUtil util;
 	
-	@RequestMapping(value = "/reviewList", method = RequestMethod.GET)
+	@GetMapping("/reviews")
 	public String reviewList(Locale locale, Model model, @ModelAttribute PageVO pvo) throws Exception {
 		if(pvo.getPage()==null) {
 			pvo.setPage(1);
@@ -75,7 +76,7 @@ public class ReviewController {
 		//System.out.println("변환된 파일명 :"+rvo.getFiles()[1]);
 		reviewService.insertOne(rvo);
 		
-		return "redirect:/reviewList";
+		return "redirect:/reviews";
 	}
 	
 	@RequestMapping(value = "/reviewModify", method = RequestMethod.GET)
@@ -90,7 +91,7 @@ public class ReviewController {
 		content = content.replace("\r\n", "<br>");
 		rvo.setRev_content(content);
 		reviewService.updateOne(rvo);
-		return "redirect:/reviewList";
+		return "redirect:/reviews";
 	}
 	
 	@RequestMapping(value = "/rdetail", method = RequestMethod.GET)
@@ -104,6 +105,6 @@ public class ReviewController {
 	@RequestMapping(value = "/reviewDelete", method = RequestMethod.GET)
 	public String reviewDelete(Locale locale, Model model, @RequestParam("rno") String rno) throws Exception {
 		reviewService.deleteOne(rno);
-		return "redirect:/reviewList";
+		return "redirect:/reviews";
 	}
 }

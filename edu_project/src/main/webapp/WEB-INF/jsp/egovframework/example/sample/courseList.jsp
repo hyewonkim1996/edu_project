@@ -98,7 +98,7 @@
 							<tr>
 								<td scope="row" style="text-align: center">${cvo.c_num}</td>
 								<td style="text-align: left">&nbsp 
-								<a href="courseOne?vno=${cvo.c_num}&page=${page.page}">
+								<a href="course-detail?vno=${cvo.c_num}&page=${page.page}">
 								${cvo.c_name}(${cvo.c_student})</a></td>
 								<td style="text-align: center">${cvo.c_place}</td>
 								<td style="text-align: center">${cvo.c_date}</td>
@@ -114,7 +114,7 @@
 	<br><br>
 	<div class="col-12 d-flex justify-content-center">
 		<c:if test="${page.prev}">
-			<a href="courseList?page=${page.startPage-1}">
+			<a href="courses?page=${page.startPage-1}">
 			<button class="btn btn-primary" style="background-color:white; border:solid #f94327 1px; color:#f94327; margin-right:5px;">
 			이전</button></a>
 		</c:if>
@@ -125,14 +125,14 @@
 						${idx}</button>
 					</c:when>
 					<c:otherwise>
-						<a href="courseList?page=${idx}">
+						<a href="courses?page=${idx}">
 						<button class="btn btn-primary" style="background-color:#f94327; border:#f94327; margin-right:5px;">
 						${idx}</button></a>
 					</c:otherwise>
 				</c:choose>
 			</c:forEach>
 		<c:if test="${page.next}">
-			<a href="courseList?page=${page.endPage+1}">
+			<a href="courses?page=${page.endPage+1}">
 			<button class="btn btn-primary" style="background-color:white; border:solid #f94327 1px; color:#f94327;">
 			다음</button></a>
 		</c:if>

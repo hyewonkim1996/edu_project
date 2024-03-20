@@ -82,7 +82,7 @@ public class MyCourseController {
 					model.addAttribute("flag2", flag2);
 					System.out.println("flag2 : " + flag2);
 					//return "courseList.do?flag2=1";
-					return "redirect:/courseOne?vno="+nowC_num;
+					return "redirect:/course-detail?vno="+nowC_num;
 				}else {
 					System.out.println("중복강좌 아님");
 				}
@@ -92,7 +92,7 @@ public class MyCourseController {
 		if(cnt == 1)  { //이미 신청한 강좌면 cnt=1임
 			flag2 = "1";
 			model.addAttribute("flag2", flag2);
-			return "redirect:/courseOne"; //현재페이지에 머물기
+			return "redirect:/course-detail"; //현재페이지에 머물기
 		}else { //지금 신청강좌가 이전에 신청한 강좌와 중복아니면 >> 신청가능 여부 체크3(모집정원이 모두 찼는지)
 			int c_now = Integer.parseInt(courseService.selectCourse(mcvo.getC_num()).getC_now()); //해당강좌 현재 신청인원
 			int c_full = Integer.parseInt(courseService.selectCourse(mcvo.getC_num()).getC_full()); //해당강좌 모집정원
@@ -103,14 +103,14 @@ public class MyCourseController {
 				flag2 = "2";
 				System.out.println("강좌신청완료");
 				model.addAttribute("flag2", flag2);
-				return "redirect:/courseOne?vno="+nowC_num; //현재페이지에 머물기
+				return "redirect:/course-detail?vno="+nowC_num; //현재페이지에 머물기
 			}else {
 				System.out.println("신청불가 - 정원초과");
 				flag2 = "3";
 				model.addAttribute("flag2", flag2);
 			}	
 			model.addAttribute("flag2", flag2);
-			return "redirect:/courseOne?vno="+nowC_num; //현재페이지에 머물기
+			return "redirect:/course-detail?vno="+nowC_num; //현재페이지에 머물기
 		}
 	}	
 	

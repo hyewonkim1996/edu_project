@@ -125,7 +125,6 @@ button {
 		</div>
 	
     <div id="form">
-    <form class="row g-3" action="joinDone" method="post">
         <div class="col-md-6">
 	<br><br><br><br><br><br><br>
           <label for="inputEmail4" class="form-label">아이디(이메일)</label>
@@ -164,7 +163,6 @@ button {
           <button type="button" id="signup_btn" class="btn btn-primary" style="background-color: #f94327;
           border:#f94327;">회원가입</button>
         </div>
-      </form>
       </div>
       <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 <!-- 하단 유관기관 배너 -->
@@ -297,7 +295,7 @@ button {
 			const phone=$('#user_phone').val();
 			const user = {m_id : id,m_pw : pw,m_name : name,m_phone : phone}
 			$.ajax({
-				url:'user',
+				url:'member',
 				method:'POST',
 				data : JSON.stringify(user), //js 데이터 객체 user를 json 문자열로 변환
 				contentType : "application/json; charset=UTF-8", //서버로 보내는 데이터 타입(json)

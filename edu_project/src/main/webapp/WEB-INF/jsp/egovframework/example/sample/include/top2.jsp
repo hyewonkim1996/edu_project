@@ -108,13 +108,13 @@ button {
 				<a href="home" class="w3-bar-item w3-button w3-padding-large w3-white">홈</a> 
 				
 				<!-- 강좌보기 -->
-				<a href="courseList" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">강좌보기</a>
+				<a href="courses" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">강좌보기</a>
 				
 				<!-- 수강후기 -->
-				<a href="reviewList" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">수강후기</a>
+				<a href="reviews" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">수강후기</a>
 				
 				<!-- 기관안내 -->
-				<a href="centerInfo" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">기관안내</a>
+				<a href="cente-info" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">기관안내</a>
 				
 				<!-- 마이페이지 -->
 				<a href="myPage2" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">마이페이지</a>

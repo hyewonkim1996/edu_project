@@ -280,7 +280,7 @@ button {
 //회원가입 함수
 function signup(user){
 	 $.ajax({
-    	 url:'user',
+    	 url:'member',
     	 method:'POST',
     	 data:JSON.stringify(user),
     	 contentType:"application/json; charset=UTF-8",
@@ -313,7 +313,7 @@ function kakaoLogin() {
               console.log(user);
               //비동기 처리 시작
               $.ajax({
-          		url:'user/'+userId,//카카오 id url에 붙여서 전송
+          		url:'member/'+userId,//카카오 id url에 붙여서 전송
           		method:'GET',
           		contentType : "application/json; charset=UTF-8", //서버로 보내는 데이터 타입(json)
           		dataType : 'text', //서버로부터 받을 데이터 타입
@@ -418,13 +418,13 @@ function kakaoLogout() {
 					title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a> <a
 					href="home"
 					class="w3-bar-item w3-button w3-padding-large w3-white">홈</a> <a
-					href="courseList"
+					href="courses"
 					class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">강좌보기</a>
 
-				<a href="reviewList"
+				<a href="reviews"
 					class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">수강후기</a>
 
-				<a href="centerInfo"
+				<a href="center-info"
 					class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">기관안내</a>
 
 				<a href="myPage2"

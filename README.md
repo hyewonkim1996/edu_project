@@ -29,7 +29,7 @@
 
 > 🔗 [프로젝트 시연 영상](https://www.youtube.com/watch?v=v1fOSp8c0Dk)
 
-> 🔗 [프로젝트 일지](https://hyewonkim1996.tistory.com/category/%F0%9F%93%81%20%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%20%EC%9D%BC%EC%A7%80)
+> 🔗 [프로젝트 & 리팩토링 일지](https://hyewonkim1996.tistory.com/category/%F0%9F%93%81%20%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%20%EC%9D%BC%EC%A7%80)
 
 > 🔗 [프로젝트 PDF](https://github.com/hyewonkim1996/edu_project/blob/main/%EA%B3%B5%EA%B3%B5%20%EA%B5%90%EC%9C%A1%20%EC%84%9C%EB%B9%84%EC%8A%A4%20-%20%EC%83%88%EC%8B%B9%EC%B2%AD%EC%86%8C%EB%85%84%EA%B5%90%EC%9C%A1%EB%B3%B5%EC%A7%80%EC%84%BC%ED%84%B0.pdf)
 

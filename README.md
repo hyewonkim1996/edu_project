@@ -72,7 +72,8 @@
 
 
 ## 🛠 코드 리팩토링
-![image]
+![image](https://github.com/hyewonkim1996/edu_project/assets/153244876/a8832694-e262-47ee-a08c-f00480d9bc00)
+
 
 &nbsp;
 
